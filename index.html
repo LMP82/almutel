@@ -4,35 +4,152 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nombre del negocio</title>
+
 <style>
-body {font-family: Arial; margin: 0; background: #f5f5f5;}
-header {background: #222; color: white; padding: 40px; text-align: center;}
-section {padding: 40px; max-width: 900px; margin: auto;}
-.card {background: white; padding: 20px; margin: 20px 0; border-radius: 8px;}
-footer {background: #222; color: white; text-align: center; padding: 20px;}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.button {
+    display: inline-block;
+    background: #111;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
 </style>
 </head>
+
 <body>
 
-<header>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#acerca">Acerca</a>
+<a href="#servicios">Servicios</a>
+<a href="#galeria">Galería</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<header id="inicio">
 <h1>Nombre del negocio</h1>
-<p>Descripción breve del negocio</p>
+<p>Profesionalidad, confianza y servicio de calidad</p>
+<a class="button" href="#">Reservar cita</a>
+<a class="button" href="#">Comprar ahora</a>
 </header>
 
-<section>
+<section id="acerca">
+<div class="card">
+<h2>Acerca de nosotros</h2>
+<p>
+Somos un negocio local dedicado a ofrecer soluciones profesionales a nuestros clientes.
+Contamos con experiencia, atención personalizada y materiales de calidad.
+</p>
+</div>
+</section>
+
+<section id="servicios">
 <div class="card">
 <h2>Servicios</h2>
 <ul>
-<li>Servicio 1</li>
-<li>Servicio 2</li>
-<li>Servicio 3</li>
+<li>Servicio principal</li>
+<li>Servicio secundario</li>
+<li>Servicio especializado</li>
 </ul>
 </div>
+</section>
 
+<section id="galeria">
+<h2>Galería de trabajos</h2>
+<div class="gallery">
+<img src="https://via.placeholder.com/400x300" alt="Trabajo 1">
+<img src="https://via.placeholder.com/400x300" alt="Trabajo 2">
+<img src="https://via.placeholder.com/400x300" alt="Trabajo 3">
+<img src="https://via.placeholder.com/400x300" alt="Trabajo 4">
+</div>
+</section>
+
+<section id="contacto">
 <div class="card">
 <h2>Contacto</h2>
-<p>Teléfono: 600 000 000</p>
-<p>Dirección: Calle ejemplo, ciudad</p>
+<p><strong>Teléfono:</strong> 600 000 000</p>
+<p><strong>Dirección:</strong> Calle ejemplo, ciudad</p>
+
+<a class="button" href="https://wa.me/34600000000">WhatsApp</a>
+<a class="button" href="mailto:correo@negocio.com">Enviar email</a>
+
+<div class="social">
+<p>Síguenos:</p>
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">Google</a>
+</div>
 </div>
 </section>
 
