@@ -5,7 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ALMUTEL</title>
 
+<meta name="description" content="Ahorra en luz, internet y seguridad en Almuñécar. Servicios para hogar y empresas.">
+
 <style>
+
+/* BASE */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,22 +17,8 @@ body {
     color: #333;
 }
 
-/* LOGO */
-.logo {
-    max-width: 400px;
-    display: block;
-    margin: 0 auto 25px;
-}
-
-/* TEXTOS */
-.subtitulo {
-    font-size: 20px;
-    color: white;
-}
-
-.descripcion {
-    font-size: 16px;
-    color: white;
+html {
+    scroll-behavior: smooth;
 }
 
 /* NAV */
@@ -50,7 +40,44 @@ nav a {
 /* HEADER */
 header {
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
+}
+
+.logo {
+    max-width: 320px;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+.descripcion {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* BOTONES */
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 22px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.whatsapp-btn { background: #25D366; }
+.call-btn { background: #0077b6; }
+
+.icono {
+    width: 20px;
 }
 
 /* SECCIONES */
@@ -60,50 +87,42 @@ section {
     margin: auto;
 }
 
+/* CARDS PREMIUM */
 .card {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
+    background: #f9f9f9;
+    padding: 35px;
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    border-left: 5px solid #00b894;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* TITULOS */
+h2 {
+    font-size: 26px;
+}
+
+/* LISTAS */
+ul li {
+    margin-bottom: 10px;
 }
 
 /* GALERÍA */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
 }
 
 .gallery img {
     width: 100%;
-}
-
-/* BOTONES */
-.button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 20px;
-    margin: 10px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.whatsapp-btn {
-    background: #25D366;
-}
-
-.call-btn {
-    background: #0077b6;
-}
-
-.button:hover {
-    opacity: 0.9;
-}
-
-/* ICONOS */
-.icono {
-    width: 20px;
+    border-radius: 8px;
 }
 
 /* WHATSAPP FLOTANTE */
@@ -113,24 +132,18 @@ section {
     right: 20px;
     background: #25D366;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 16px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     gap: 8px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     z-index: 999;
 }
 
 .whatsapp-float img {
     width: 28px;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
 }
 
 /* FOOTER */
@@ -140,6 +153,13 @@ footer {
     text-align: center;
     padding: 30px;
 }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .logo { max-width: 220px; }
+    .whatsapp-float span { display: none; }
+}
+
 </style>
 </head>
 
@@ -149,22 +169,24 @@ footer {
 <a href="#inicio">Inicio</a>
 <a href="#acerca">Acerca</a>
 <a href="#servicios">Servicios</a>
+<a href="#seo">Google</a>
+<a href="#opiniones">Opiniones</a>
 <a href="#galeria">Galería</a>
 <a href="#contacto">Contacto</a>
 </nav>
 
 <header id="inicio">
-<img src="images/logo.png" alt="ALMUTEL" class="logo">
+<img src="images/logo.png" class="logo">
 
 <p class="subtitulo">
-Ahorra en luz, internet y seguridad sin complicaciones
+TELECOMUNICACIONES · ENERGÍA · SEGURIDAD
 </p>
 
 <p class="descripcion">
-Te asesoramos y gestionamos todo para que pagues menos cada mes
+Servicios para hogar y empresas · Ahorro y asesoramiento personalizado
 </p>
 
-<a class="button whatsapp-btn" href="https://wa.me/34624419642?text=Hola%20quiero%20información">
+<a class="button whatsapp-btn" href="https://wa.me/34624419642">
 <img src="images/whatsapp.png" class="icono"> WhatsApp
 </a>
 
@@ -177,8 +199,7 @@ Te asesoramos y gestionamos todo para que pagues menos cada mes
 <div class="card">
 <h2>Acerca de nosotros</h2>
 <p>
-Somos un negocio local dedicado a ofrecer soluciones tecnológicas profesionales optimizando tus facturas.
-Atención personalizada y servicio de calidad.
+Ayudamos a particulares y empresas a reducir costes en telecomunicaciones, energía y seguridad.
 </p>
 </div>
 </section>
@@ -187,16 +208,50 @@ Atención personalizada y servicio de calidad.
 <div class="card">
 <h2>Servicios</h2>
 <ul>
-<li>Asesor técnico</li>
-<li>Contratación de servicios</li>
-<li>Seguridad, energía y telecomunicaciones</li>
-<li>Instalación CCTV sin cuotas mensuales</li>
+<li>Fibra y redes</li>
+<li>Líneas móviles</li>
+<li>Router 4G / 5G</li>
+<li>Ahorro energético</li>
+<li>Comparativa de compañías</li>
+<li>Cámaras CCTV</li>
+<li>Sistemas de seguridad</li>
 </ul>
+
+<p><strong>Estudiamos tu caso y te ayudamos a pagar menos</strong></p>
 </div>
 </section>
 
+<section id="seo">
+<div class="card">
+<h2>Posicionamiento en Google</h2>
+<p>
+Mejoramos tu visibilidad para que más clientes te encuentren y aumentes tus ventas.
+</p>
+</div>
+</section>
+
+<section id="opiniones">
+<h2 style="color:white; text-align:center;">Opiniones</h2>
+
+<div class="card">
+<p>"Me bajaron la factura y mejoraron el servicio."</p>
+<strong>- Cliente local</strong>
+</div>
+
+<div class="card">
+<p>"Instalación rápida de cámaras y sin cuotas."</p>
+<strong>- Negocio</strong>
+</div>
+
+<div class="card">
+<p>"Muy profesionales, lo recomiendo."</p>
+<strong>- Particular</strong>
+</div>
+
+</section>
+
 <section id="galeria">
-<h2>Galería de trabajos</h2>
+<h2 style="color:white;">Galería</h2>
 <div class="gallery">
 <img src="images/foto1.jpg">
 <img src="images/foto2.jpg">
@@ -209,20 +264,13 @@ Atención personalizada y servicio de calidad.
 <div class="card">
 <h2>Contacto</h2>
 <p><strong>Teléfono:</strong> 624419642</p>
-<p><strong>Dirección:</strong> Almuñécar Granada</p>
+<p><strong>Ubicación:</strong> Almuñécar</p>
 
-<a class="button whatsapp-btn" href="https://wa.me/34624419642?text=Hola%20quiero%20información">
+<a class="button whatsapp-btn" href="https://wa.me/34624419642">
 <img src="images/whatsapp.png" class="icono"> WhatsApp
 </a>
 
-<a class="button" href="mailto:almutel@almutel.es">Enviar email</a>
-
-<div class="social">
-<p>Síguenos:</p>
-<a href="#">Instagram</a>
-<a href="#">Facebook</a>
-<a href="#">Google</a>
-</div>
+<a class="button" href="mailto:almutel@almutel.es">Email</a>
 </div>
 </section>
 
@@ -230,8 +278,7 @@ Atención personalizada y servicio de calidad.
 <p>© 2026 ALMUTEL</p>
 </footer>
 
-<!-- BOTÓN FLOTANTE -->
-<a href="https://wa.me/34624419642?text=Hola%20quiero%20información" class="whatsapp-float">
+<a href="https://wa.me/34624419642" class="whatsapp-float">
 <span>Contáctanos</span>
 <img src="images/whatsapp.png">
 </a>
