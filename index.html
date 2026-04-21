@@ -6,25 +6,6 @@
 <title>ALMUTEL</title>
 
 <style>
-  .whatsapp-btn {
-    background: #25D366;
-}
-
-.whatsapp-btn:hover {
-    background: #1ebe5d;
-}
-
-.call-btn {
-    background: #0077b6;
-}
-
-.call-btn:hover {
-    background: #005f8a;
-}  
-<a href="https://wa.me/34624419642?text=Hola%20quiero%20información" class="whatsapp-float" target="_blank">
-    <span>Contáctanos</span>
-    <img src="images/whatsapp.png" alt="WhatsApp">
-</a>  
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -32,24 +13,21 @@ body {
     color: #333;
 }
 
-/* LOGO Y TEXTOS */
+/* LOGO */
 .logo {
     max-width: 400px;
     display: block;
     margin: 0 auto 25px;
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
 }
 
+/* TEXTOS */
 .subtitulo {
     font-size: 20px;
-    margin-bottom: 10px;
     color: white;
 }
 
 .descripcion {
     font-size: 16px;
-    opacity: 0.9;
-    margin-bottom: 25px;
     color: white;
 }
 
@@ -60,7 +38,6 @@ nav {
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 1000;
 }
 
 nav a {
@@ -86,9 +63,7 @@ section {
 .card {
     background: white;
     padding: 25px;
-    margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 /* GALERÍA */
@@ -100,45 +75,39 @@ section {
 
 .gallery img {
     width: 100%;
-    border-radius: 8px;
 }
 
 /* BOTONES */
 .button {
-    display: inline-block;
-    background: #0077b6;
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 12px 20px;
-    margin: 10px 5px;
+    margin: 10px;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.button:hover {
-    background: #00b894;
-    transition: 0.3s;
+.whatsapp-btn {
+    background: #25D366;
 }
 
-/* REDES */
-.social {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.social a {
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* FOOTER */
-footer {
+.call-btn {
     background: #0077b6;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
 }
-</style>.whatsapp-float {
+
+.button:hover {
+    opacity: 0.9;
+}
+
+/* ICONOS */
+.icono {
+    width: 20px;
+}
+
+/* WHATSAPP FLOTANTE */
+.whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -157,13 +126,21 @@ footer {
 
 .whatsapp-float img {
     width: 28px;
-    height: 28px;
 }
 
 .whatsapp-float:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
+
+/* FOOTER */
+footer {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+</style>
 </head>
 
 <body>
@@ -187,12 +164,12 @@ Ahorra en luz, internet y seguridad sin complicaciones
 Te asesoramos y gestionamos todo para que pagues menos cada mes
 </p>
 
-<a class="button whatsapp-btn" href="https://wa.me/34624419642?text=Hola%20quiero%20información" target="_blank">
-<i class="fab fa-whatsapp"></i> WhatsApp
+<a class="button whatsapp-btn" href="https://wa.me/34624419642?text=Hola%20quiero%20información">
+<img src="images/whatsapp.png" class="icono"> WhatsApp
 </a>
 
 <a class="button call-btn" href="tel:624419642">
-<i class="fas fa-phone"></i> Llamar ahora
+<img src="images/llamada.png" class="icono"> Llamar ahora
 </a>
 </header>
 
@@ -234,7 +211,10 @@ Atención personalizada y servicio de calidad.
 <p><strong>Teléfono:</strong> 624419642</p>
 <p><strong>Dirección:</strong> Almuñécar Granada</p>
 
-<a class="button" href="https://wa.me/34624419642?text=Hola%20quiero%20información">WhatsApp</a>
+<a class="button whatsapp-btn" href="https://wa.me/34624419642?text=Hola%20quiero%20información">
+<img src="images/whatsapp.png" class="icono"> WhatsApp
+</a>
+
 <a class="button" href="mailto:almutel@almutel.es">Enviar email</a>
 
 <div class="social">
@@ -249,6 +229,12 @@ Atención personalizada y servicio de calidad.
 <footer>
 <p>© 2026 ALMUTEL</p>
 </footer>
+
+<!-- BOTÓN FLOTANTE -->
+<a href="https://wa.me/34624419642?text=Hola%20quiero%20información" class="whatsapp-float">
+<span>Contáctanos</span>
+<img src="images/whatsapp.png">
+</a>
 
 </body>
 </html>
