@@ -6,17 +6,17 @@
 
 <title>ALMUTEL | Telecomunicaciones, Energía, CCTV y Páginas Web</title>
 
-<meta name="description" content="Contratación de telefonía, internet, energía y cámaras de seguridad CCTV. Atención online para toda España. Soluciones para hogares y empresas desde Almuñécar Granada.">
+<meta name="description" content="Telefonía, internet, energía, cámaras CCTV y páginas web. Atención online para toda España desde Almuñécar Granada.">
 
-<meta name="keywords" content="telecomunicaciones España, ahorro energía Granada, cámaras CCTV sin cuota, internet fibra Almuñécar, páginas web personalizadas, atención online telecomunicaciones">
+<meta name="keywords" content="telecomunicaciones España, internet Granada, cámaras CCTV, ahorro energía, páginas web personalizadas">
 
-<meta name="robots" content="index, follow">
-
-<!-- POSICIONAMIENTO REDES -->
 <meta property="og:title" content="ALMUTEL">
-<meta property="og:description" content="Telecomunicaciones, energía, videovigilancia y páginas web en Granada y toda España">
+<meta property="og:description" content="Telecomunicaciones, energía, videovigilancia y páginas web">
 <meta property="og:image" content="https://almutel.es/images/logo.png">
 <meta property="og:url" content="https://almutel.es">
+
+<!-- ICONOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 
@@ -57,7 +57,6 @@ header {
     margin-bottom: 20px;
 }
 
-/* TEXTOS */
 h1 {
     font-size: 42px;
     margin-bottom: 15px;
@@ -65,7 +64,7 @@ h1 {
 
 .subtitulo {
     font-size: 22px;
-    max-width: 800px;
+    max-width: 850px;
     margin: auto;
     line-height: 1.6;
 }
@@ -98,12 +97,8 @@ h1 {
     background: #005f8a;
 }
 
-.presupuesto-btn {
-    background: #111;
-}
-
-.presupuesto-btn:hover {
-    background: #333;
+.button i {
+    margin-right: 8px;
 }
 
 /* SECCIONES */
@@ -122,6 +117,11 @@ section {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+.card p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
 /* LISTAS */
 ul {
     line-height: 2;
@@ -132,22 +132,18 @@ ul {
 /* GALERÍA */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 15px;
 }
 
 .gallery img {
     width: 100%;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
-/* OPINIONES */
-.review {
-    background: #fff;
-    padding: 18px;
-    border-left: 5px solid #00b894;
-    margin: 15px 0;
-    border-radius: 6px;
+.gallery img:hover {
+    transform: scale(1.02);
 }
 
 /* FORMULARIOS */
@@ -173,6 +169,27 @@ form button {
 
 form button:hover {
     background: #005f8a;
+}
+
+/* OPINIONES */
+.review {
+    background: white;
+    padding: 18px;
+    border-left: 5px solid #00b894;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+/* REDES */
+.social {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.social a {
+    color: #0077b6;
+    margin: 0 10px;
+    font-size: 22px;
 }
 
 /* WHATSAPP FLOTANTE */
@@ -204,7 +221,6 @@ footer {
     color: white;
     text-align: center;
     padding: 30px 20px;
-    margin-top: 40px;
 }
 
 </style>
@@ -212,9 +228,10 @@ footer {
 
 <body>
 
-<!-- MENÚ -->
+<!-- MENU -->
 <nav>
 <a href="#inicio">Inicio</a>
+<a href="#acerca">Acerca</a>
 <a href="#servicios">Servicios</a>
 <a href="#galeria">Galería</a>
 <a href="#contacto">Contacto</a>
@@ -229,23 +246,39 @@ footer {
 <h1>Telecomunicaciones, Energía y Seguridad</h1>
 
 <p class="subtitulo">
-Soluciones para hogares y empresas en Granada y atención online en toda España.
-Contratación de internet, telefonía, energía, videovigilancia CCTV y creación de páginas web informativas.
+Atención personalizada para empresas y hogares en Granada y atención telemática para toda España.
+Internet, telefonía, ahorro energético, videovigilancia CCTV y páginas web informativas personalizadas.
 </p>
 
 <a class="button whatsapp-btn" href="https://wa.me/34624419642?text=Hola%20quiero%20información" target="_blank">
-WhatsApp
+<i class="fab fa-whatsapp"></i> WhatsApp
 </a>
 
 <a class="button call-btn" href="tel:624419642">
-Llamar ahora
-</a>
-
-<a class="button presupuesto-btn" href="#contacto">
-Solicitar presupuesto
+<i class="fas fa-phone"></i> Llamar ahora
 </a>
 
 </header>
+
+<!-- ACERCA -->
+<section id="acerca">
+
+<div class="card">
+
+<h2>Acerca de nosotros</h2>
+
+<p>
+Somos un negocio orientado a telecomunicaciones, energía, seguridad y soluciones digitales para hogares, autónomos y empresas.
+Ofrecemos atención cercana, asesoramiento personalizado y posibilidad de contratación online para clientes de toda España.
+</p>
+
+<p>
+Trabajamos con soluciones de ahorro y conectividad adaptadas a cada cliente, buscando siempre simplicidad, transparencia y atención rápida.
+</p>
+
+</div>
+
+</section>
 
 <!-- SERVICIOS -->
 <section id="servicios">
@@ -255,19 +288,22 @@ Solicitar presupuesto
 <h2>Servicios</h2>
 
 <ul>
-<li>Contratación de telefonía móvil y fibra</li>
 
-<li>Atención y contratación online en toda España</li>
+<li>Contratación de fibra y telefonía móvil</li>
 
-<li>Optimización y ahorro en energía</li>
+<li>Contratación compañías energéticas </li>
+    
+<li>Atención online y contratación telemática en toda España</li>
+
+<li>Optimización en facturacion y ahorro energético</li>
 
 <li>Instalación de cámaras CCTV sin cuota mensual</li>
 
-<li>Videovigilancia para hogar y negocios</li>
+<li>Videovigilancia para negocio y hogar </li>
 
-<li>Creación de páginas web informativas personalizadas</li>
+<li>Creación de páginas web personalizadas</li>
 
-<li>Asesoramiento para hogares, autónomos y empresas</li>
+<li>Asesoramiento técnico y comercial</li>
 
 </ul>
 
@@ -275,12 +311,12 @@ Solicitar presupuesto
 
 </section>
 
-<!-- GALERÍA -->
+<!-- GALERIA -->
 <section id="galeria">
 
 <div class="card">
 
-<h2>Galería</h2>
+<h2>Galería de trabajos</h2>
 
 <div class="gallery">
 
@@ -288,6 +324,16 @@ Solicitar presupuesto
 <img src="images/foto2.jpg" alt="Trabajo 2">
 <img src="images/foto3.jpg" alt="Trabajo 3">
 <img src="images/foto4.jpg" alt="Trabajo 4">
+<img src="images/foto5.jpg" alt="Trabajo 5">
+<img src="images/foto6.jpg" alt="Trabajo 6">
+<img src="images/foto7.jpg" alt="Trabajo 7">
+<img src="images/foto8.jpg" alt="Trabajo 8">
+<img src="images/foto9.jpg" alt="Trabajo 9">
+<img src="images/foto10.jpg" alt="Trabajo 10">
+<img src="images/foto11.jpg" alt="Trabajo 11">
+<img src="images/foto12.jpg" alt="Trabajo 12">
+<img src="images/foto13.jpg" alt="Trabajo 13">
+<img src="images/foto14.jpg" alt="Trabajo 14">
 
 </div>
 
@@ -302,27 +348,33 @@ Solicitar presupuesto
 
 <h2>Contacto</h2>
 
-<p><strong>Teléfono:</strong> 624 419 642</p>
+<p><strong>Teléfono:</strong> 624419642</p>
 
 <p><strong>Email:</strong> almutel@almutel.es</p>
 
-<p><strong>Ubicación:</strong> Almuñécar (Granada)</p>
+<p><strong>Ubicación:</strong> Almuñécar Granada</p>
 
 <p><strong>Atención online:</strong> Disponible para toda España</p>
 
-<h3>Solicitar presupuesto</h3>
+<a class="button whatsapp-btn" href="https://wa.me/34624419642?text=Hola%20quiero%20información" target="_blank">
+<i class="fab fa-whatsapp"></i> WhatsApp
+</a>
 
-<form action="https://formspree.io/f/mdabzbpo" method="POST">
+<a class="button call-btn" href="tel:624419642">
+<i class="fas fa-phone"></i> Llamar ahora
+</a>
 
-<input type="text" name="nombre" placeholder="Tu nombre" required>
+<div class="social">
 
-<input type="email" name="email" placeholder="Tu email" required>
+<p>Síguenos:</p>
 
-<textarea name="mensaje" placeholder="¿Qué necesitas?" rows="5" required></textarea>
+<a href="#"><i class="fab fa-instagram"></i></a>
 
-<button type="submit">Enviar solicitud</button>
+<a href="#"><i class="fab fa-facebook"></i></a>
 
-</form>
+<a href="#"><i class="fab fa-google"></i></a>
+
+</div>
 
 </div>
 
@@ -336,25 +388,14 @@ Solicitar presupuesto
 <h2>Opiniones reales de clientes</h2>
 
 <p>
-Las opiniones mostradas corresponden a clientes reales que han utilizado nuestros servicios.
+Las opiniones enviadas serán revisadas antes de publicarse en la página.
 </p>
-
-<!-- AQUÍ AÑADES OPINIONES REALES -->
-
-<!-- EJEMPLO FUTURO
-<div class="review">
-<strong>Nombre Cliente</strong>
-<p>Comentario real del cliente.</p>
-</div>
--->
-
-<h3>Enviar opinión</h3>
 
 <form action="https://formspree.io/f/mdabzbpo" method="POST">
 
 <input type="text" name="nombre" placeholder="Tu nombre" required>
 
-<textarea name="opinion" placeholder="Escribe tu opinión" rows="4" required></textarea>
+<textarea name="opinion" placeholder="Escribe tu opinión" rows="5" required></textarea>
 
 <button type="submit">Enviar opinión</button>
 
