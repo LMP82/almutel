@@ -3,39 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Almutel - Telecomunicaciones, luz y atención online para clientes de toda España.">
-<meta name="keywords" content="telecomunicaciones, fibra, móvil, luz, internet, atención online, España, Almuñécar">
-<meta name="author" content="Almutel">
-<title>Almutel | Telecomunicaciones y Energía</title>
+
+<title>ALMUTEL | Telecomunicaciones, Energía, CCTV y Páginas Web</title>
+
+<meta name="description" content="Contratación de telefonía, internet, energía y cámaras de seguridad CCTV. Atención online para toda España. Soluciones para hogares y empresas desde Almuñécar Granada.">
+
+<meta name="keywords" content="telecomunicaciones España, ahorro energía Granada, cámaras CCTV sin cuota, internet fibra Almuñécar, páginas web personalizadas, atención online telecomunicaciones">
+
+<meta name="robots" content="index, follow">
+
+<!-- POSICIONAMIENTO REDES -->
+<meta property="og:title" content="ALMUTEL">
+<meta property="og:description" content="Telecomunicaciones, energía, videovigilancia y páginas web en Granada y toda España">
+<meta property="og:image" content="https://almutel.es/images/logo.png">
+<meta property="og:url" content="https://almutel.es">
 
 <style>
+
+/* GENERAL */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: #0d1117;
-    color: white;
-}
-
-header {
-    background: #111827;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-header h1 {
     margin: 0;
-    font-size: 3rem;
+    background: linear-gradient(135deg, #0077b6, #00b894);
+    color: #333;
 }
 
-header p {
-    margin-top: 10px;
-    color: #9ca3af;
-}
-
+/* NAV */
 nav {
-    background: #1f2937;
+    background: linear-gradient(90deg, #0077b6, #00b894);
     padding: 15px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -45,162 +45,339 @@ nav a {
     font-weight: bold;
 }
 
+/* HEADER */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.logo {
+    max-width: 320px;
+    margin-bottom: 20px;
+}
+
+/* TEXTOS */
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    font-size: 22px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* BOTONES */
+.button {
+    display: inline-block;
+    padding: 14px 22px;
+    margin: 10px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+}
+
+.call-btn {
+    background: #0077b6;
+}
+
+.call-btn:hover {
+    background: #005f8a;
+}
+
+.presupuesto-btn {
+    background: #111;
+}
+
+.presupuesto-btn:hover {
+    background: #333;
+}
+
+/* SECCIONES */
 section {
+    padding: 50px 20px;
     max-width: 1100px;
     margin: auto;
-    padding: 60px 20px;
 }
 
-h2 {
-    color: #60a5fa;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
+/* TARJETAS */
 .card {
-    background: #1f2937;
-    padding: 25px;
-    border-radius: 10px;
+    background: rgba(255,255,255,0.96);
+    padding: 30px;
+    border-radius: 12px;
+    margin: 25px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+/* LISTAS */
+ul {
+    line-height: 2;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+/* GALERÍA */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 15px;
 }
 
-input,
-textarea {
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-button {
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-button:hover {
-    background: #1d4ed8;
-}
-
-footer {
-    background: #111827;
-    text-align: center;
-    padding: 30px 20px;
-    color: #9ca3af;
-}
-
-.notice {
-    background: #172554;
-    padding: 20px;
-    border-left: 4px solid #60a5fa;
-    margin-top: 20px;
+/* OPINIONES */
+.review {
+    background: #fff;
+    padding: 18px;
+    border-left: 5px solid #00b894;
+    margin: 15px 0;
     border-radius: 6px;
 }
+
+/* FORMULARIOS */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+form button {
+    background: #0077b6;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: #005f8a;
+}
+
+/* WHATSAPP FLOTANTE */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.whatsapp-float img {
+    width: 28px;
+    height: 28px;
+}
+
+/* FOOTER */
+footer {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>ALMUTEL</h1>
-    <p>Telecomunicaciones, fibra, móvil y energía</p>
-</header>
-
+<!-- MENÚ -->
 <nav>
-    <a href="#servicios">Servicios</a>
-    <a href="#online">Atención Online</a>
-    <a href="#opiniones">Opiniones</a>
-    <a href="#contacto">Contacto</a>
+<a href="#inicio">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="#galeria">Galería</a>
+<a href="#contacto">Contacto</a>
+<a href="#opiniones">Opiniones</a>
 </nav>
 
+<!-- HEADER -->
+<header id="inicio">
+
+<img src="images/logo.png" alt="ALMUTEL" class="logo">
+
+<h1>Telecomunicaciones, Energía y Seguridad</h1>
+
+<p class="subtitulo">
+Soluciones para hogares y empresas en Granada y atención online en toda España.
+Contratación de internet, telefonía, energía, videovigilancia CCTV y creación de páginas web informativas.
+</p>
+
+<a class="button whatsapp-btn" href="https://wa.me/34624419642?text=Hola%20quiero%20información" target="_blank">
+WhatsApp
+</a>
+
+<a class="button call-btn" href="tel:624419642">
+Llamar ahora
+</a>
+
+<a class="button presupuesto-btn" href="#contacto">
+Solicitar presupuesto
+</a>
+
+</header>
+
+<!-- SERVICIOS -->
 <section id="servicios">
-    <h2>Servicios</h2>
 
-    <div class="cards">
-        <div class="card">
-            <h3>Fibra y móvil</h3>
-            <p>Asesoramiento y contratación de servicios de telecomunicaciones para particulares y empresas.</p>
-        </div>
+<div class="card">
 
-        <div class="card">
-            <h3>Luz y energía</h3>
-            <p>Gestión y optimización de contratos energéticos adaptados a cada cliente.</p>
-        </div>
+<h2>Servicios</h2>
 
-        <div class="card">
-            <h3>Soporte y asesoramiento</h3>
-            <p>Atención personalizada para resolver dudas y mejorar condiciones de contratación.</p>
-        </div>
-    </div>
+<ul>
+<li>Contratación de telefonía móvil y fibra</li>
+
+<li>Atención y contratación online en toda España</li>
+
+<li>Optimización y ahorro en energía</li>
+
+<li>Instalación de cámaras CCTV sin cuota mensual</li>
+
+<li>Videovigilancia para hogar y negocios</li>
+
+<li>Creación de páginas web informativas personalizadas</li>
+
+<li>Asesoramiento para hogares, autónomos y empresas</li>
+
+</ul>
+
+</div>
+
 </section>
 
-<section id="online">
-    <h2>Atención Online en Toda España</h2>
+<!-- GALERÍA -->
+<section id="galeria">
 
-    <p>
-        Almutel ofrece atención online para clientes de toda España.
-        Es posible gestionar contrataciones, cambios de compañía,
-        comparativas y asesoramiento de manera telemática.
-    </p>
+<div class="card">
 
-    <div class="notice">
-        <strong>Atención nacional online:</strong>
-        Posibilidad de realizar gestiones y contratación a distancia mediante teléfono,
-        correo electrónico o videollamada.
-    </div>
+<h2>Galería</h2>
+
+<div class="gallery">
+
+<img src="images/foto1.jpg" alt="Trabajo 1">
+<img src="images/foto2.jpg" alt="Trabajo 2">
+<img src="images/foto3.jpg" alt="Trabajo 3">
+<img src="images/foto4.jpg" alt="Trabajo 4">
+
+</div>
+
+</div>
+
 </section>
 
-<section id="opiniones">
-    <h2>Opiniones</h2>
-
-    <p>
-        Las opiniones enviadas son revisadas manualmente antes de publicarse.
-    </p>
-
-    <form action="https://formspree.io/f/mdabzbpo" method="POST">
-
-        <input type="text" name="nombre" placeholder="Nombre" required>
-
-        <input type="email" name="email" placeholder="Correo electrónico" required>
-
-        <textarea name="opinion" rows="6" placeholder="Escribe tu opinión" required></textarea>
-
-        <input type="text" name="_gotcha" style="display:none">
-
-        <input type="hidden" name="_subject" value="Nueva opinión web Almutel">
-
-        <button type="submit">Enviar opinión</button>
-
-    </form>
-</section>
-
+<!-- CONTACTO -->
 <section id="contacto">
-    <h2>Contacto</h2>
 
-    <p>
-        Puedes solicitar información o presupuesto mediante correo electrónico o atención online.
-    </p>
+<div class="card">
 
-    <p>
-        Email: almutel@almutel.es
-    </p>
+<h2>Contacto</h2>
+
+<p><strong>Teléfono:</strong> 624 419 642</p>
+
+<p><strong>Email:</strong> almutel@almutel.es</p>
+
+<p><strong>Ubicación:</strong> Almuñécar (Granada)</p>
+
+<p><strong>Atención online:</strong> Disponible para toda España</p>
+
+<h3>Solicitar presupuesto</h3>
+
+<form action="https://formspree.io/f/mdabzbpo" method="POST">
+
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+
+<input type="email" name="email" placeholder="Tu email" required>
+
+<textarea name="mensaje" placeholder="¿Qué necesitas?" rows="5" required></textarea>
+
+<button type="submit">Enviar solicitud</button>
+
+</form>
+
+</div>
+
 </section>
 
+<!-- OPINIONES -->
+<section id="opiniones">
+
+<div class="card">
+
+<h2>Opiniones reales de clientes</h2>
+
+<p>
+Las opiniones mostradas corresponden a clientes reales que han utilizado nuestros servicios.
+</p>
+
+<!-- AQUÍ AÑADES OPINIONES REALES -->
+
+<!-- EJEMPLO FUTURO
+<div class="review">
+<strong>Nombre Cliente</strong>
+<p>Comentario real del cliente.</p>
+</div>
+-->
+
+<h3>Enviar opinión</h3>
+
+<form action="https://formspree.io/f/mdabzbpo" method="POST">
+
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+
+<textarea name="opinion" placeholder="Escribe tu opinión" rows="4" required></textarea>
+
+<button type="submit">Enviar opinión</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/34624419642?text=Hola%20quiero%20información" class="whatsapp-float" target="_blank">
+
+<span>Contáctanos</span>
+
+<img src="images/whatsapp.png" alt="WhatsApp">
+
+</a>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Almutel - Telecomunicaciones y Energía</p>
+
+<p>© 2026 ALMUTEL</p>
+
 </footer>
 
 </body>
